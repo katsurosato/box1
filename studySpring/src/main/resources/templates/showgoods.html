@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Goods table</title></head>
+<body>
+  <h1>Goods table</h1>
+  <table border="1">
+       <tr><th>id</th><th>name</th><th>price</th></tr>
+       <tr th:each="a : ${toHtml}">
+           <td th:text="${a.id}"></td>
+           <td th:text="${a.name}"></td>
+           <td th:text="${a.price}"></td></tr>
+   </table>
+</body>
+</html>
